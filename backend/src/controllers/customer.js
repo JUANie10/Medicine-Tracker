@@ -13,6 +13,7 @@ exports.createCustomer = async (req, res) => {
 };
 
 // GET /customer/:googleID
+// weird comment to check if it works
 exports.getCustomer = async (req, res) => {
     try {
         const googleID = req.params.googleID;
