@@ -1,8 +1,8 @@
 import React from 'react';
 import Home from './Home';
 import Login from './Login';
+import Calendar from './Calendar';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import 'semantic-ui-css/semantic.min.css';
 
 function App() {
   return (
@@ -14,6 +14,9 @@ function App() {
           </Route>
           <Route path="/home" exact>
             <Home/>
+          </Route>
+          <Route path="/calendar" exact>
+            <Calendar/>
           </Route>
         </Switch>
       </BrowserRouter>
